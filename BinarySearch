@@ -1,0 +1,43 @@
+# Binary search for recursive way
+def binarySearch(array, l, h, x):
+    if h >= l:
+        mid = l + (h - 1) // 2
+        if array[mid] == x:
+            return mid
+        elif array[mid] > x:
+            return binarySearch(array, l, mid - 1, x)
+        else:
+            return binarySearch(array, mid + 1, h, x)
+    else:
+        return - 1
+
+
+array = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+x = 30
+result = binarySearch(array, 0, len(array), x)
+if result != -1:
+    print("The position of the number is % d" % result)
+else:
+    print("Element is not found in array")
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Binary search for iterative way
+# Binary search for recursive way
+def binarySearch(array, l, h, x):
+    while l <= h:
+        mid = l + (h - 1) // 2
+        if array[mid] == x:
+            return mid
+        elif array[mid] < x:
+            l = mid + 1
+        else:
+            h = mid - 1
+    return - 1
+
+
+array = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+x = 40
+result = binarySearch(array, 0, len(array), x)
+if result != -1:
+    print("The position of the number is % d" % result)
+else:
+    print("Element is not found in array")
