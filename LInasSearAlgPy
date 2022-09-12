@@ -1,0 +1,13 @@
+def LinearAlg(data, n, x):
+    for i in range(0,n):
+        if data[i] == x:
+            return i
+    return - 1
+data = [2, 3, 45, 6, 7, 9]
+x = 45
+n = len(data)
+result = LinearAlg(data, n, x)
+if (result == -1):
+    print("Elements is not found")
+else:
+    print("Elent found at ", result)
