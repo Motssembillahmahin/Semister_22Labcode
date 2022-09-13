@@ -1,3 +1,4 @@
+#time complexity of selection sort O(N*N)
 def SelectionSort(data, size):
     for i in range(size):
         minpos = i
