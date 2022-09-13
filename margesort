@@ -1,4 +1,5 @@
 //mergesort with python code
+//time complexity of mergesort O(N*log N)
 def mergeSort(array):
     if len(array) > 1:
 
