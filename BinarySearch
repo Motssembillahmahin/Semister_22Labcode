@@ -1,3 +1,4 @@
+#time complexity of binary search O(log n)
 # Binary search for recursive way
 def binarySearch(array, l, h, x):
     if h >= l:
