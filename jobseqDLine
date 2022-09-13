@@ -1,4 +1,4 @@
-//time complexity for job sequencing DeadLine
+//time complexity for job sequencing DeadLine O(N*N)
 # Python3 code for the above approach
 
 # function to schedule the jobs take 2
