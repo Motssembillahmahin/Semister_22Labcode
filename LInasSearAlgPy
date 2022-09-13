@@ -1,3 +1,4 @@
+#time complexity of Linear Search O(N)
 def LinearAlg(data, n, x):
     for i in range(0,n):
         if data[i] == x:
